@@ -2,7 +2,11 @@ const taskdata=[];
 function addtask(){
     const task=document.getElementById('task').value;
     if(!task){
-        alert("Please enter your task");
+        Swal.fire({
+            title: "Error",
+            text: "Please Enter Your Task",
+            icon: "error"
+          });
     }else
     {
         taskdata.push(task);

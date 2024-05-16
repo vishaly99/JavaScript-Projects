@@ -30,7 +30,7 @@ input{
     border: 1px solid black;
     margin-top: 20px;
 }
-h2,label,p{
+h2,label,p,span{
     color: #fff;
     margin: 8px 0;
 }
