@@ -1,0 +1,36 @@
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#todo-container{
+    background: rgb(255, 255,255,0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+button{
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 15px;
+}
+input{
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+h2,label,p{
+    color: #fff;
+    margin: 8px 0;
+}
