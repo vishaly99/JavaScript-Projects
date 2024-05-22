@@ -1,0 +1,51 @@
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.search-container,h1{
+    text-align: center;
+    color: white;
+}
+img{
+    min-width: 100%;
+    display: block;
+    box-shadow: 0 0 3px 2px rgb(80, 80, 80);
+    transition: 0.34s ease-in-out;
+}
+img:hover{
+    transform: scale(1.04);
+}
+input{
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 0.1rem;
+}
+input:focus-within{
+    box-shadow: 0 0 3px 3px rgb(80, 80, 80);
+}
+button{
+    font-size: 1rem;
+    padding: 0.25em 0.75em;
+    background-color: rgb(66, 151, 151);
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 3px rgb(105, 104, 104);
+}
+button:active{
+    transform: translate(1px,1px);
+    box-shadow: 1px 1px 7px 0px rgb(105, 104, 104);
+}
+button:hover{
+    cursor: pointer;
+}
+.image-conatiner{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,0.4fr));
+    gap: 20px;
+    margin: 10px auto;
+    place-content: center;
+}
