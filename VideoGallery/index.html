@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>How to make a vidoe gallery</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="./media/daku.jpg" width="90%">
+                    <img src="./media/play-button.png" class="play-btn" onclick="playVideo('./media/Daku.mp4')">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./media/Prabha-245.jpg" width="90%">
+                        <img src="./media/play-button.png" class="play-btn" onclick="playVideo('./media/Prabha-245.mp4')">
+                    </div>
+                    <p>How to add multiple videos in a website or <br>to make a video gallery</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./media/Mi Armor.jpg" width="90%">
+                        <img src="./media/play-button.png" class="play-btn" onclick="playVideo('./media/Mi Armor.mp4')">
+                    </div>
+                    <p>How to add multiple videos in a website or <br>to make a video gallery</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./media/Check Kar.jpg" width="90%">
+                        <img src="./media/play-button.png" class="play-btn" onclick="playVideo('./media/Check Kar.mp4')">
+                    </div>
+                    <p>How to add multiple videos in a website or <br>to make a video gallery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="90%" controls autoplay id="myVideo">
+            <source src="./media/Daku.mp4" type="video/mp4">
+        </video>
+        <img src="./media/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
